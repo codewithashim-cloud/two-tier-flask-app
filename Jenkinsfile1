@@ -5,6 +5,7 @@ pipeline{
         stage("code"){
             steps{
                echo "repo merged" 
+               echo "Heppy merge"
                git url: "https://github.com/codewithashim-cloud/two-tier-flask-app.git", branch: "master"
             }
         }
